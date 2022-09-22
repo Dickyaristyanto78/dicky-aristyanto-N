@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<style type="text/css">
+			body{
+				background-image: url(backgroundd.jpg) ;
+			}
+			h1{
+				text-align: center;
+			}
+		</style>
+		<title>Ngatmombilung KLEBUS (guyon waton cover)</title>
+	</head>
+	<body align="center">
+		<h2>KLEBUS Ngatmombilung (guyon waton cover)</h2>
+		<button onclick="playVid()" type="button">Play Video</button>
+		<button onclick="pauseVid()" type="button">Pause Video</button><br>
+		<video id="myVideo" width="520" height="340" controls>
+			<source src="NGATMOMBILUNG - KLEBUS (GUYONWATON COVER).mp4" type="video/mp4">
+            <track src="subtitle ngatmombilung.vtt" kind="subtitles" srclang="id" label="Indonesia"/>
+		</video>
+		<p> Sumber Video : https://www.youtube.com/watch?v=Gz2bMo6WQUI</p>
+	</body>
+	<script>
+	var vid = document.getElementById("myVideo");
+	
+	function playVid() {
+		vid.play() ;
+	}
+	
+	function pauseVid() {
+		vid.pause() ;
+	}
+	</script>
+</html>
